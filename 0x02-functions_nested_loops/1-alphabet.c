@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - check the code,
  * return alpabets in lower case
@@ -8,9 +8,7 @@
 void print_alphabet(void)
 {
 	char ch;
-
 	ch = 'a';
-
 	while (ch <= 'z')
 	{
 		_putchar(ch);
@@ -18,4 +16,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
