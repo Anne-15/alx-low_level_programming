@@ -11,8 +11,10 @@ int is_prime_number(int n)
 	{
 		return (1);
 	}
-	else
+	else if (n < 0)
 	{
 		return (0);
 	}
+
+	return (0);
 }
