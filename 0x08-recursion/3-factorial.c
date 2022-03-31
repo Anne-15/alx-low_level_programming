@@ -7,7 +7,7 @@
  */
 int factorial(int n)
 {
-	int fact;
+	int fact = 1;
 
 	if (n < 0)
 	{
