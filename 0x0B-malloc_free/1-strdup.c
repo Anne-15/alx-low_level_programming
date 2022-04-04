@@ -7,7 +7,7 @@
  *
  * Return: a pointer to the copied string
  */
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *n;
 	int i;
@@ -15,7 +15,7 @@ char *strdup(char *str)
 
 	if (str == 0)
 		return (NULL);
-	while (*(str == count))
+	while (*str == count)
 	{
 		count++;
 	}
