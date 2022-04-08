@@ -30,7 +30,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s == NULL)
 		return (s);
 
-	//coppying the first string to the allocated memory
 	for (i = 0; i < size1; i++)
 	{
 		s[i] = s1[i];
