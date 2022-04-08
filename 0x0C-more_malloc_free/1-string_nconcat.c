@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_nonconcat - function that concatinates two strings
+ * string_nconcat - function that concatinates two strings
  * @s1: the first string
  * @s2: the second string
  * @n: number of bytes to be copied
