@@ -10,7 +10,7 @@
  * Return index in the first element for which
  * the cmp function does not return 0
  */
-int int_array(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
 
