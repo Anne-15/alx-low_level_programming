@@ -3,6 +3,10 @@
 #include <stdio.h>
 
 /**
+ * _strlen - gets the length of the string
+ * @str: the string to be used
+ *
+ * Return: the length of the string
  */
 unsigned int _strlen(char *str)
 {
@@ -14,6 +18,12 @@ unsigned int _strlen(char *str)
 }
 
 /**
+ * add_node - function to add node at the beginning of the list
+ * @head: double pointer to the head of a linked list
+ * @str: string to add to the new node
+ *
+ * Return: pointer to the new node
+ *
  */
 
 list_t *add_node(list_t **head, const char *str)
