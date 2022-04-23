@@ -1,23 +1,6 @@
 #include "lists.h"
 
 /**
- * _strlen - gets the length of string
- * @str: the given string
- *
- * Return: the length of the string
- *
- */
-int _strlen(const char *str)
-{
-	int length = 0;
-
-	while (str)
-		length++;
-
-	return (length);
-}
-
-/**
  * add_node_end - function to add node at the end of the list
  * @head: double pointer to the head of the list
  * @str: a given string
@@ -28,6 +11,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *end_node = malloc(sizeof(list_t));
 	list_t *temp = *head;
+	unsigned int len = 0;
 
 	if (!str)
 		return (NULL);
@@ -43,7 +27,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	end_node->len = _strlen(str);
+	while (str[len])
+		len++;
+	end_node->len = len;
 
 	if (*head == NULL)
 	{
@@ -54,8 +40,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (temp->next)
 	{
 		temp = temp->next;
-		temp->next = end_node;
 	}
 
+	temp->next = end_node;
 	return (end_node);
 }
