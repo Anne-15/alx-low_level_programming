@@ -6,7 +6,7 @@
  * followed by a new line
  * @n: print from this number
  */
-void print_to_98(void)
+void print_to_98(int n)
 {
 	int a, b;
 
